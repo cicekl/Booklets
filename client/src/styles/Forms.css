@@ -1,0 +1,37 @@
+.logInForm, .registerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.inputField {
+    width: 350px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.logInBtn, .registerBtn {
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    align-self: center;
+}
+
+
+

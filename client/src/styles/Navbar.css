@@ -1,0 +1,77 @@
+.navBar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ff914d;
+    height: 180px;
+    border: transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.upBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.downBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    width: 100%;
+}
+
+.links {
+    text-align: center; 
+}
+
+.navLinks {
+    text-decoration: none;
+    background: none;
+}
+
+.navLinks.active .linkText {
+    border-bottom: 3px solid white; 
+    padding-bottom: 5px;
+}
+
+.logOut {
+    cursor: pointer;
+}
+
+.searchBar {
+    width: 670px;
+    border: transparent;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 40px;
+    margin-right: 180px;
+}
+
+input[placeholder] {
+    padding-left: 10px;
+}
+
+p {
+    margin-top: 50px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.logoTitle {
+    margin-top: 50px;
+    font-size: 55px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.linkText {
+    font-size: 20px;
+    margin: auto;
+    width: 120px;
+}

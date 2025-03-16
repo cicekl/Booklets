@@ -1,0 +1,53 @@
+.bookInput {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+;}
+
+.inputTitle {
+    font-style: italic;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.inputs {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 30px;
+}
+
+.notesInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    height: 100vh;
+}
+
+.addBookBtn {
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    align-self: center;
+    background-color: #ff914d; 
+    margin-bottom: 60px;
+}
+
+.bookCover {
+    display: block;
+    margin: 100px auto;
+}

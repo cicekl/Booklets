@@ -1,0 +1,30 @@
+.bookDetailContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 100px;
+}
+
+.bookInfoDetails {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.fullText {
+    color: black;
+    font-size: large;
+    width: 1000px;
+    font-style: italic;
+}
+
+.bookCoverImgDetails {
+    margin-top: 100px;
+}
+
+.imgDetails {
+    width: 300px;
+    height: 500px;
+}
