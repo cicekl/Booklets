@@ -1,0 +1,30 @@
+CREATE TABLE userInfo (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE bookInfo (
+    id SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    author TEXT NOT NULL,
+    genre TEXT,
+    isbn VARCHAR(20) UNIQUE,
+    coverurl TEXT,
+    user_id INTEGER REFERENCES userInfo(id) ON DELETE CASCADE
+);
+
+CREATE TABLE favourites (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES userInfo(id) ON DELETE CASCADE,
+    book_id INTEGER REFERENCES bookInfo(id) ON DELETE CASCADE
+);
+
+CREATE TABLE notes (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES userInfo(id) ON DELETE CASCADE,
+    book_id INTEGER REFERENCES bookInfo(id) ON DELETE CASCADE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    note TEXT
+);
